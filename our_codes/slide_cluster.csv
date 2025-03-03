@@ -1,0 +1,58 @@
+,filename,cluster,antibody,brain_region
+0,PD67_C34-45_Amygdala.svs.npy,3,C34-45,Amygdala
+1,PD179_C34-45_Amygdala.svs.npy,3,C34-45,Amygdala
+2,PD158_C34-45_EntCx.svs.npy,3,C34-45,EntCx
+3,PD177_C34-45_Amygdala.svs.npy,2,C34-45,Amygdala
+4,PD92_C110-115_EntCx David Menassa.svs.npy,0,C110-115,EntCx
+5,PD17_Amygdala_C110-115 David Menassa.svs.npy,1,C110-115,Amygdala
+6,PD140_EntCx_C110-115.svs.npy,3,C110-115,EntCx
+7,PD92_C34-45_EntCx.svs.npy,3,C34-45,EntCx
+8,PD158_C110-115_EntCx David Menassa.svs.npy,0,C110-115,EntCx
+9,PD102_Amygdala_C110-115.svs.npy,0,C110-115,Amygdala
+10,PD102_EntCx_C110-115.svs.npy,3,C110-115,EntCx
+11,PD13_C34-45_Amygdala.svs.npy,3,C34-45,Amygdala
+12,PD133_C34-45_Amygdala.svs.npy,3,C34-45,Amygdala
+13,PD177_C110-115_Amygdala David Menassa.svs.npy,0,C110-115,Amygdala
+14,PD130_C110-115_Amygdala David Menassa.svs.npy,0,C110-115,Amygdala
+15,PD130_C34-45_Amygdala.svs.npy,3,C34-45,Amygdala
+16,PD79_Amygdala_C110-115.svs.npy,1,C110-115,Amygdala
+17,PD159_C110-115_Amygdala David Menassa.svs.npy,0,C110-115,Amygdala
+18,PD97_Amygdala_C110-115.svs.npy,0,C110-115,Amygdala
+19,PD140_C34-45_EntCx.svs.npy,3,C34-45,EntCx
+20,PD92_C34-45_Amygdala.svs.npy,3,C34-45,Amygdala
+21,PD144_C34-45_Amygdala.svs.npy,0,C34-45,Amygdala
+22,PD131_C110-115_Amygdala David Menassa.svs.npy,0,C110-115,Amygdala
+23,PD171_C110-115_Amygdala David Menassa.svs.npy,0,C110-115,Amygdala
+24,PD179_C110-115_Amygdala David Menassa.svs.npy,0,C110-115,Amygdala
+25,PD151_EntCx_C110-115.svs.npy,1,C110-115,EntCx
+26,PD171_C110-115_EntCx David Menassa.svs.npy,0,C110-115,EntCx
+27,PD77_C34-45_EntCx.svs.npy,3,C34-45,EntCx
+28,PD144_EntCx_C110-115.svs.npy,0,C110-115,EntCx
+29,PD97_C34-45_EntCx.svs.npy,3,C34-45,EntCx
+30,PD67_Amygdala_C110-115 David Menassa.svs.npy,1,C110-115,Amygdala
+31,PD171_C34-45_Amygdala.svs.npy,3,C34-45,Amygdala
+32,PD125_C110-115_EntCx David Menassa.svs.npy,0,C110-115,EntCx
+33,PD102_C34-45_Amygdala.svs.npy,3,C34-45,Amygdala
+34,PD144_C34-45_EntCx.svs.npy,3,C34-45,EntCx
+35,PD125_C34-45_EntCx.svs.npy,3,C34-45,EntCx
+36,PD88_C110-115_EntCx David Menassa.svs.npy,2,C110-115,EntCx
+37,PD76_C34-45_EntCx.svs.npy,3,C34-45,EntCx
+38,PD17_C34-45_EntCx.svs.npy,3,C34-45,EntCx
+39,PD79_C34-45_Amygdala.svs.npy,3,C34-45,Amygdala
+40,PD131_C34-45_Amygdala.svs.npy,3,C34-45,Amygdala
+41,PD17_EntCx_C110-115 David Menassa.svs.npy,1,C110-115,EntCx
+42,PD77_EntCx_C110-115.svs.npy,1,C110-115,EntCx
+43,PD151_C34-45_EntCx.svs.npy,1,C34-45,EntCx
+44,PD159_C34-45_Amygdala.svs.npy,2,C34-45,Amygdala
+45,PD151_Amygdala_C110-115.svs.npy,1,C110-115,Amygdala
+46,PD97_C34-45_Amygdala.svs.npy,3,C34-45,Amygdala
+47,PD97_EntCx_C110-115.svs.npy,1,C110-115,EntCx
+48,PD76_EntCx_C110-115.svs.npy,1,C110-115,EntCx
+49,PD144_Amygdala_C110-115.svs.npy,0,C110-115,Amygdala
+50,PD92_Amygdala_C110-115.svs.npy,0,C110-115,Amygdala
+51,PD102_C34-45_EntCx.svs.npy,3,C34-45,EntCx
+52,PD77_C34-45_Amygdala.svs.npy,3,C34-45,Amygdala
+53,PD13_Amygdala_C110-115 David Menassa.svs.npy,3,C110-115,Amygdala
+54,PD17_C34-45_Amygdala.svs.npy,3,C34-45,Amygdala
+55,PD151_C34-45_Amygdala.svs.npy,3,C34-45,Amygdala
+56,PD77_Amygdala_C110-115.svs.npy,1,C110-115,Amygdala

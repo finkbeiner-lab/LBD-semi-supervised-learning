@@ -119,7 +119,7 @@ def slide_collate_fn(samples):
 
 
 def get_splits(df: pd.DataFrame, 
-               val_r: float=0.1, test_r: float=0.2, 
+               val_r: float=0.2, test_r: float=0.2, 
                fold: int=0, 
                split_dir: str='', 
                fetch_splits: bool=True, 

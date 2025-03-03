@@ -1,0 +1,397 @@
+/gladstone/finkbeiner/home/mahirwar/miniforge3/envs/gigapath2/lib/python3.9/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/gladstone/finkbeiner/home/mahirwar/miniforge3/envs/gigapath2/lib/python3.9/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+cuda:0
+dilated_ratio:  [1, 2, 4, 8, 16]
+segment_length:  [np.int64(1024), np.int64(5792), np.int64(32768), np.int64(185363), np.int64(1048576)]
+Number of trainable LongNet parameters:  85148160
+Global Pooling: False
+slide_encoder.pth:   0%|          | 0.00/345M [00:00<?, ?B/s]slide_encoder.pth:   3%|▎         | 10.5M/345M [00:00<00:03, 105MB/s]slide_encoder.pth:   9%|▉         | 31.5M/345M [00:00<00:02, 120MB/s]slide_encoder.pth:  18%|█▊        | 62.9M/345M [00:00<00:01, 174MB/s]slide_encoder.pth:  27%|██▋       | 94.4M/345M [00:00<00:01, 196MB/s]slide_encoder.pth:  36%|███▋      | 126M/345M [00:00<00:01, 212MB/s] slide_encoder.pth:  46%|████▌     | 157M/345M [00:00<00:00, 216MB/s]slide_encoder.pth:  55%|█████▍    | 189M/345M [00:00<00:00, 221MB/s]slide_encoder.pth:  64%|██████▍   | 220M/345M [00:01<00:00, 225MB/s]slide_encoder.pth:  73%|███████▎  | 252M/345M [00:01<00:00, 228MB/s]slide_encoder.pth:  82%|████████▏ | 283M/345M [00:01<00:00, 231MB/s]slide_encoder.pth:  91%|█████████ | 315M/345M [00:01<00:00, 225MB/s]slide_encoder.pth: 100%|██████████| 345M/345M [00:01<00:00, 225MB/s]slide_encoder.pth: 100%|██████████| 345M/345M [00:01<00:00, 212MB/s]
+/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/gigapath/slide_encoder.py:238: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(local_path, map_location="cpu")["model"]
+/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/model_intepretation/ablationcam.py:123: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(checkpoint_path)
+/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/model_intepretation/ablationcam.py:405: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  fp16_scaler = torch.cuda.amp.GradScaler()
+/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/model_intepretation/ablationcam.py:426: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(fp16_scaler is not None, dtype=torch.float16):
+/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/model_intepretation/ablationcam.py:426: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(fp16_scaler is not None, dtype=torch.float16):
+/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/model_intepretation/ablationcam.py:426: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(fp16_scaler is not None, dtype=torch.float16):
+/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/model_intepretation/ablationcam.py:426: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(fp16_scaler is not None, dtype=torch.float16):
+/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/model_intepretation/ablationcam.py:426: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(fp16_scaler is not None, dtype=torch.float16):
+/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/model_intepretation/ablationcam.py:426: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(fp16_scaler is not None, dtype=torch.float16):
+/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/model_intepretation/ablationcam.py:426: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(fp16_scaler is not None, dtype=torch.float16):
+/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/model_intepretation/ablationcam.py:426: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(fp16_scaler is not None, dtype=torch.float16):
+/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/model_intepretation/ablationcam.py:426: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(fp16_scaler is not None, dtype=torch.float16):
+/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/model_intepretation/ablationcam.py:426: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(fp16_scaler is not None, dtype=torch.float16):
+/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/model_intepretation/ablationcam.py:426: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(fp16_scaler is not None, dtype=torch.float16):
+/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/model_intepretation/ablationcam.py:426: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(fp16_scaler is not None, dtype=torch.float16):
+/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/model_intepretation/ablationcam.py:426: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(fp16_scaler is not None, dtype=torch.float16):
+/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/model_intepretation/ablationcam.py:426: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(fp16_scaler is not None, dtype=torch.float16):
+/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/model_intepretation/ablationcam.py:426: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(fp16_scaler is not None, dtype=torch.float16):
+/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/model_intepretation/ablationcam.py:426: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(fp16_scaler is not None, dtype=torch.float16):
+/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/model_intepretation/ablationcam.py:426: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(fp16_scaler is not None, dtype=torch.float16):
+/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/model_intepretation/ablationcam.py:426: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(fp16_scaler is not None, dtype=torch.float16):
+/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/model_intepretation/ablationcam.py:426: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(fp16_scaler is not None, dtype=torch.float16):
+/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/model_intepretation/ablationcam.py:426: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(fp16_scaler is not None, dtype=torch.float16):
+/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/model_intepretation/ablationcam.py:426: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(fp16_scaler is not None, dtype=torch.float16):
+/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/model_intepretation/ablationcam.py:426: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(fp16_scaler is not None, dtype=torch.float16):
+/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/model_intepretation/ablationcam.py:426: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(fp16_scaler is not None, dtype=torch.float16):
+/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/model_intepretation/ablationcam.py:426: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(fp16_scaler is not None, dtype=torch.float16):
+/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/model_intepretation/ablationcam.py:426: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(fp16_scaler is not None, dtype=torch.float16):
+[92m Successfully Loaded Pretrained GigaPath model from hf_hub:prov-gigapath/prov-gigapath [00m
+odict_keys(['slide_encoder.cls_token', 'slide_encoder.patch_embed.proj.weight', 'slide_encoder.patch_embed.proj.bias', 'slide_encoder.encoder.layers.0.self_attn.k_proj.weight', 'slide_encoder.encoder.layers.0.self_attn.k_proj.bias', 'slide_encoder.encoder.layers.0.self_attn.v_proj.weight', 'slide_encoder.encoder.layers.0.self_attn.v_proj.bias', 'slide_encoder.encoder.layers.0.self_attn.q_proj.weight', 'slide_encoder.encoder.layers.0.self_attn.q_proj.bias', 'slide_encoder.encoder.layers.0.self_attn.out_proj.weight', 'slide_encoder.encoder.layers.0.self_attn.out_proj.bias', 'slide_encoder.encoder.layers.0.self_attn.inner_attn_ln.weight', 'slide_encoder.encoder.layers.0.self_attn.inner_attn_ln.bias', 'slide_encoder.encoder.layers.0.self_attn_layer_norm.weight', 'slide_encoder.encoder.layers.0.self_attn_layer_norm.bias', 'slide_encoder.encoder.layers.0.ffn.fc1.weight', 'slide_encoder.encoder.layers.0.ffn.fc1.bias', 'slide_encoder.encoder.layers.0.ffn.fc2.weight', 'slide_encoder.encoder.layers.0.ffn.fc2.bias', 'slide_encoder.encoder.layers.0.ffn.ffn_layernorm.weight', 'slide_encoder.encoder.layers.0.ffn.ffn_layernorm.bias', 'slide_encoder.encoder.layers.0.final_layer_norm.weight', 'slide_encoder.encoder.layers.0.final_layer_norm.bias', 'slide_encoder.encoder.layers.1.self_attn.k_proj.weight', 'slide_encoder.encoder.layers.1.self_attn.k_proj.bias', 'slide_encoder.encoder.layers.1.self_attn.v_proj.weight', 'slide_encoder.encoder.layers.1.self_attn.v_proj.bias', 'slide_encoder.encoder.layers.1.self_attn.q_proj.weight', 'slide_encoder.encoder.layers.1.self_attn.q_proj.bias', 'slide_encoder.encoder.layers.1.self_attn.out_proj.weight', 'slide_encoder.encoder.layers.1.self_attn.out_proj.bias', 'slide_encoder.encoder.layers.1.self_attn.inner_attn_ln.weight', 'slide_encoder.encoder.layers.1.self_attn.inner_attn_ln.bias', 'slide_encoder.encoder.layers.1.self_attn_layer_norm.weight', 'slide_encoder.encoder.layers.1.self_attn_layer_norm.bias', 'slide_encoder.encoder.layers.1.ffn.fc1.weight', 'slide_encoder.encoder.layers.1.ffn.fc1.bias', 'slide_encoder.encoder.layers.1.ffn.fc2.weight', 'slide_encoder.encoder.layers.1.ffn.fc2.bias', 'slide_encoder.encoder.layers.1.ffn.ffn_layernorm.weight', 'slide_encoder.encoder.layers.1.ffn.ffn_layernorm.bias', 'slide_encoder.encoder.layers.1.final_layer_norm.weight', 'slide_encoder.encoder.layers.1.final_layer_norm.bias', 'slide_encoder.encoder.layers.2.self_attn.k_proj.weight', 'slide_encoder.encoder.layers.2.self_attn.k_proj.bias', 'slide_encoder.encoder.layers.2.self_attn.v_proj.weight', 'slide_encoder.encoder.layers.2.self_attn.v_proj.bias', 'slide_encoder.encoder.layers.2.self_attn.q_proj.weight', 'slide_encoder.encoder.layers.2.self_attn.q_proj.bias', 'slide_encoder.encoder.layers.2.self_attn.out_proj.weight', 'slide_encoder.encoder.layers.2.self_attn.out_proj.bias', 'slide_encoder.encoder.layers.2.self_attn.inner_attn_ln.weight', 'slide_encoder.encoder.layers.2.self_attn.inner_attn_ln.bias', 'slide_encoder.encoder.layers.2.self_attn_layer_norm.weight', 'slide_encoder.encoder.layers.2.self_attn_layer_norm.bias', 'slide_encoder.encoder.layers.2.ffn.fc1.weight', 'slide_encoder.encoder.layers.2.ffn.fc1.bias', 'slide_encoder.encoder.layers.2.ffn.fc2.weight', 'slide_encoder.encoder.layers.2.ffn.fc2.bias', 'slide_encoder.encoder.layers.2.ffn.ffn_layernorm.weight', 'slide_encoder.encoder.layers.2.ffn.ffn_layernorm.bias', 'slide_encoder.encoder.layers.2.final_layer_norm.weight', 'slide_encoder.encoder.layers.2.final_layer_norm.bias', 'slide_encoder.encoder.layers.3.self_attn.k_proj.weight', 'slide_encoder.encoder.layers.3.self_attn.k_proj.bias', 'slide_encoder.encoder.layers.3.self_attn.v_proj.weight', 'slide_encoder.encoder.layers.3.self_attn.v_proj.bias', 'slide_encoder.encoder.layers.3.self_attn.q_proj.weight', 'slide_encoder.encoder.layers.3.self_attn.q_proj.bias', 'slide_encoder.encoder.layers.3.self_attn.out_proj.weight', 'slide_encoder.encoder.layers.3.self_attn.out_proj.bias', 'slide_encoder.encoder.layers.3.self_attn.inner_attn_ln.weight', 'slide_encoder.encoder.layers.3.self_attn.inner_attn_ln.bias', 'slide_encoder.encoder.layers.3.self_attn_layer_norm.weight', 'slide_encoder.encoder.layers.3.self_attn_layer_norm.bias', 'slide_encoder.encoder.layers.3.ffn.fc1.weight', 'slide_encoder.encoder.layers.3.ffn.fc1.bias', 'slide_encoder.encoder.layers.3.ffn.fc2.weight', 'slide_encoder.encoder.layers.3.ffn.fc2.bias', 'slide_encoder.encoder.layers.3.ffn.ffn_layernorm.weight', 'slide_encoder.encoder.layers.3.ffn.ffn_layernorm.bias', 'slide_encoder.encoder.layers.3.final_layer_norm.weight', 'slide_encoder.encoder.layers.3.final_layer_norm.bias', 'slide_encoder.encoder.layers.4.self_attn.k_proj.weight', 'slide_encoder.encoder.layers.4.self_attn.k_proj.bias', 'slide_encoder.encoder.layers.4.self_attn.v_proj.weight', 'slide_encoder.encoder.layers.4.self_attn.v_proj.bias', 'slide_encoder.encoder.layers.4.self_attn.q_proj.weight', 'slide_encoder.encoder.layers.4.self_attn.q_proj.bias', 'slide_encoder.encoder.layers.4.self_attn.out_proj.weight', 'slide_encoder.encoder.layers.4.self_attn.out_proj.bias', 'slide_encoder.encoder.layers.4.self_attn.inner_attn_ln.weight', 'slide_encoder.encoder.layers.4.self_attn.inner_attn_ln.bias', 'slide_encoder.encoder.layers.4.self_attn_layer_norm.weight', 'slide_encoder.encoder.layers.4.self_attn_layer_norm.bias', 'slide_encoder.encoder.layers.4.ffn.fc1.weight', 'slide_encoder.encoder.layers.4.ffn.fc1.bias', 'slide_encoder.encoder.layers.4.ffn.fc2.weight', 'slide_encoder.encoder.layers.4.ffn.fc2.bias', 'slide_encoder.encoder.layers.4.ffn.ffn_layernorm.weight', 'slide_encoder.encoder.layers.4.ffn.ffn_layernorm.bias', 'slide_encoder.encoder.layers.4.final_layer_norm.weight', 'slide_encoder.encoder.layers.4.final_layer_norm.bias', 'slide_encoder.encoder.layers.5.self_attn.k_proj.weight', 'slide_encoder.encoder.layers.5.self_attn.k_proj.bias', 'slide_encoder.encoder.layers.5.self_attn.v_proj.weight', 'slide_encoder.encoder.layers.5.self_attn.v_proj.bias', 'slide_encoder.encoder.layers.5.self_attn.q_proj.weight', 'slide_encoder.encoder.layers.5.self_attn.q_proj.bias', 'slide_encoder.encoder.layers.5.self_attn.out_proj.weight', 'slide_encoder.encoder.layers.5.self_attn.out_proj.bias', 'slide_encoder.encoder.layers.5.self_attn.inner_attn_ln.weight', 'slide_encoder.encoder.layers.5.self_attn.inner_attn_ln.bias', 'slide_encoder.encoder.layers.5.self_attn_layer_norm.weight', 'slide_encoder.encoder.layers.5.self_attn_layer_norm.bias', 'slide_encoder.encoder.layers.5.ffn.fc1.weight', 'slide_encoder.encoder.layers.5.ffn.fc1.bias', 'slide_encoder.encoder.layers.5.ffn.fc2.weight', 'slide_encoder.encoder.layers.5.ffn.fc2.bias', 'slide_encoder.encoder.layers.5.ffn.ffn_layernorm.weight', 'slide_encoder.encoder.layers.5.ffn.ffn_layernorm.bias', 'slide_encoder.encoder.layers.5.final_layer_norm.weight', 'slide_encoder.encoder.layers.5.final_layer_norm.bias', 'slide_encoder.encoder.layers.6.self_attn.k_proj.weight', 'slide_encoder.encoder.layers.6.self_attn.k_proj.bias', 'slide_encoder.encoder.layers.6.self_attn.v_proj.weight', 'slide_encoder.encoder.layers.6.self_attn.v_proj.bias', 'slide_encoder.encoder.layers.6.self_attn.q_proj.weight', 'slide_encoder.encoder.layers.6.self_attn.q_proj.bias', 'slide_encoder.encoder.layers.6.self_attn.out_proj.weight', 'slide_encoder.encoder.layers.6.self_attn.out_proj.bias', 'slide_encoder.encoder.layers.6.self_attn.inner_attn_ln.weight', 'slide_encoder.encoder.layers.6.self_attn.inner_attn_ln.bias', 'slide_encoder.encoder.layers.6.self_attn_layer_norm.weight', 'slide_encoder.encoder.layers.6.self_attn_layer_norm.bias', 'slide_encoder.encoder.layers.6.ffn.fc1.weight', 'slide_encoder.encoder.layers.6.ffn.fc1.bias', 'slide_encoder.encoder.layers.6.ffn.fc2.weight', 'slide_encoder.encoder.layers.6.ffn.fc2.bias', 'slide_encoder.encoder.layers.6.ffn.ffn_layernorm.weight', 'slide_encoder.encoder.layers.6.ffn.ffn_layernorm.bias', 'slide_encoder.encoder.layers.6.final_layer_norm.weight', 'slide_encoder.encoder.layers.6.final_layer_norm.bias', 'slide_encoder.encoder.layers.7.self_attn.k_proj.weight', 'slide_encoder.encoder.layers.7.self_attn.k_proj.bias', 'slide_encoder.encoder.layers.7.self_attn.v_proj.weight', 'slide_encoder.encoder.layers.7.self_attn.v_proj.bias', 'slide_encoder.encoder.layers.7.self_attn.q_proj.weight', 'slide_encoder.encoder.layers.7.self_attn.q_proj.bias', 'slide_encoder.encoder.layers.7.self_attn.out_proj.weight', 'slide_encoder.encoder.layers.7.self_attn.out_proj.bias', 'slide_encoder.encoder.layers.7.self_attn.inner_attn_ln.weight', 'slide_encoder.encoder.layers.7.self_attn.inner_attn_ln.bias', 'slide_encoder.encoder.layers.7.self_attn_layer_norm.weight', 'slide_encoder.encoder.layers.7.self_attn_layer_norm.bias', 'slide_encoder.encoder.layers.7.ffn.fc1.weight', 'slide_encoder.encoder.layers.7.ffn.fc1.bias', 'slide_encoder.encoder.layers.7.ffn.fc2.weight', 'slide_encoder.encoder.layers.7.ffn.fc2.bias', 'slide_encoder.encoder.layers.7.ffn.ffn_layernorm.weight', 'slide_encoder.encoder.layers.7.ffn.ffn_layernorm.bias', 'slide_encoder.encoder.layers.7.final_layer_norm.weight', 'slide_encoder.encoder.layers.7.final_layer_norm.bias', 'slide_encoder.encoder.layers.8.self_attn.k_proj.weight', 'slide_encoder.encoder.layers.8.self_attn.k_proj.bias', 'slide_encoder.encoder.layers.8.self_attn.v_proj.weight', 'slide_encoder.encoder.layers.8.self_attn.v_proj.bias', 'slide_encoder.encoder.layers.8.self_attn.q_proj.weight', 'slide_encoder.encoder.layers.8.self_attn.q_proj.bias', 'slide_encoder.encoder.layers.8.self_attn.out_proj.weight', 'slide_encoder.encoder.layers.8.self_attn.out_proj.bias', 'slide_encoder.encoder.layers.8.self_attn.inner_attn_ln.weight', 'slide_encoder.encoder.layers.8.self_attn.inner_attn_ln.bias', 'slide_encoder.encoder.layers.8.self_attn_layer_norm.weight', 'slide_encoder.encoder.layers.8.self_attn_layer_norm.bias', 'slide_encoder.encoder.layers.8.ffn.fc1.weight', 'slide_encoder.encoder.layers.8.ffn.fc1.bias', 'slide_encoder.encoder.layers.8.ffn.fc2.weight', 'slide_encoder.encoder.layers.8.ffn.fc2.bias', 'slide_encoder.encoder.layers.8.ffn.ffn_layernorm.weight', 'slide_encoder.encoder.layers.8.ffn.ffn_layernorm.bias', 'slide_encoder.encoder.layers.8.final_layer_norm.weight', 'slide_encoder.encoder.layers.8.final_layer_norm.bias', 'slide_encoder.encoder.layers.9.self_attn.k_proj.weight', 'slide_encoder.encoder.layers.9.self_attn.k_proj.bias', 'slide_encoder.encoder.layers.9.self_attn.v_proj.weight', 'slide_encoder.encoder.layers.9.self_attn.v_proj.bias', 'slide_encoder.encoder.layers.9.self_attn.q_proj.weight', 'slide_encoder.encoder.layers.9.self_attn.q_proj.bias', 'slide_encoder.encoder.layers.9.self_attn.out_proj.weight', 'slide_encoder.encoder.layers.9.self_attn.out_proj.bias', 'slide_encoder.encoder.layers.9.self_attn.inner_attn_ln.weight', 'slide_encoder.encoder.layers.9.self_attn.inner_attn_ln.bias', 'slide_encoder.encoder.layers.9.self_attn_layer_norm.weight', 'slide_encoder.encoder.layers.9.self_attn_layer_norm.bias', 'slide_encoder.encoder.layers.9.ffn.fc1.weight', 'slide_encoder.encoder.layers.9.ffn.fc1.bias', 'slide_encoder.encoder.layers.9.ffn.fc2.weight', 'slide_encoder.encoder.layers.9.ffn.fc2.bias', 'slide_encoder.encoder.layers.9.ffn.ffn_layernorm.weight', 'slide_encoder.encoder.layers.9.ffn.ffn_layernorm.bias', 'slide_encoder.encoder.layers.9.final_layer_norm.weight', 'slide_encoder.encoder.layers.9.final_layer_norm.bias', 'slide_encoder.encoder.layers.10.self_attn.k_proj.weight', 'slide_encoder.encoder.layers.10.self_attn.k_proj.bias', 'slide_encoder.encoder.layers.10.self_attn.v_proj.weight', 'slide_encoder.encoder.layers.10.self_attn.v_proj.bias', 'slide_encoder.encoder.layers.10.self_attn.q_proj.weight', 'slide_encoder.encoder.layers.10.self_attn.q_proj.bias', 'slide_encoder.encoder.layers.10.self_attn.out_proj.weight', 'slide_encoder.encoder.layers.10.self_attn.out_proj.bias', 'slide_encoder.encoder.layers.10.self_attn.inner_attn_ln.weight', 'slide_encoder.encoder.layers.10.self_attn.inner_attn_ln.bias', 'slide_encoder.encoder.layers.10.self_attn_layer_norm.weight', 'slide_encoder.encoder.layers.10.self_attn_layer_norm.bias', 'slide_encoder.encoder.layers.10.ffn.fc1.weight', 'slide_encoder.encoder.layers.10.ffn.fc1.bias', 'slide_encoder.encoder.layers.10.ffn.fc2.weight', 'slide_encoder.encoder.layers.10.ffn.fc2.bias', 'slide_encoder.encoder.layers.10.ffn.ffn_layernorm.weight', 'slide_encoder.encoder.layers.10.ffn.ffn_layernorm.bias', 'slide_encoder.encoder.layers.10.final_layer_norm.weight', 'slide_encoder.encoder.layers.10.final_layer_norm.bias', 'slide_encoder.encoder.layers.11.self_attn.k_proj.weight', 'slide_encoder.encoder.layers.11.self_attn.k_proj.bias', 'slide_encoder.encoder.layers.11.self_attn.v_proj.weight', 'slide_encoder.encoder.layers.11.self_attn.v_proj.bias', 'slide_encoder.encoder.layers.11.self_attn.q_proj.weight', 'slide_encoder.encoder.layers.11.self_attn.q_proj.bias', 'slide_encoder.encoder.layers.11.self_attn.out_proj.weight', 'slide_encoder.encoder.layers.11.self_attn.out_proj.bias', 'slide_encoder.encoder.layers.11.self_attn.inner_attn_ln.weight', 'slide_encoder.encoder.layers.11.self_attn.inner_attn_ln.bias', 'slide_encoder.encoder.layers.11.self_attn_layer_norm.weight', 'slide_encoder.encoder.layers.11.self_attn_layer_norm.bias', 'slide_encoder.encoder.layers.11.ffn.fc1.weight', 'slide_encoder.encoder.layers.11.ffn.fc1.bias', 'slide_encoder.encoder.layers.11.ffn.fc2.weight', 'slide_encoder.encoder.layers.11.ffn.fc2.bias', 'slide_encoder.encoder.layers.11.ffn.ffn_layernorm.weight', 'slide_encoder.encoder.layers.11.ffn.ffn_layernorm.bias', 'slide_encoder.encoder.layers.11.final_layer_norm.weight', 'slide_encoder.encoder.layers.11.final_layer_norm.bias', 'slide_encoder.encoder.layer_norm.weight', 'slide_encoder.encoder.layer_norm.bias', 'slide_encoder.norm.weight', 'slide_encoder.norm.bias', 'classifier.0.weight', 'classifier.0.bias'])
+DilatedAttention(
+  (k_proj): Linear(in_features=768, out_features=768, bias=True)
+  (v_proj): Linear(in_features=768, out_features=768, bias=True)
+  (q_proj): Linear(in_features=768, out_features=768, bias=True)
+  (out_proj): Linear(in_features=768, out_features=768, bias=True)
+  (inner_attn_ln): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (dropout_module): Dropout(p=0.0, inplace=False)
+)
+LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+ClassificationHead(
+  (slide_encoder): LongNetViT(
+    (patch_embed): PatchEmbed(
+      (proj): Linear(in_features=1536, out_features=768, bias=True)
+      (norm): Identity()
+    )
+    (encoder): LongNetEncoder(
+      (dropout_module): Dropout(p=0.1, inplace=False)
+      (layers): ModuleList(
+        (0): LongNetEncoderLayer(
+          (self_attn): DilatedAttention(
+            (k_proj): Linear(in_features=768, out_features=768, bias=True)
+            (v_proj): Linear(in_features=768, out_features=768, bias=True)
+            (q_proj): Linear(in_features=768, out_features=768, bias=True)
+            (out_proj): Linear(in_features=768, out_features=768, bias=True)
+            (inner_attn_ln): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+            (dropout_module): Dropout(p=0.0, inplace=False)
+          )
+          (self_attn_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+          (drop_path): DropPath(p=0.0)
+          (ffn): FeedForwardNetwork(
+            (activation_dropout_module): Dropout(p=0.0, inplace=False)
+            (dropout_module): Dropout(p=0.1, inplace=False)
+            (fc1): Linear(in_features=768, out_features=3072, bias=True)
+            (fc2): Linear(in_features=3072, out_features=768, bias=True)
+            (ffn_layernorm): LayerNorm((3072,), eps=1e-05, elementwise_affine=True)
+          )
+          (final_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        )
+        (1): LongNetEncoderLayer(
+          (self_attn): DilatedAttention(
+            (k_proj): Linear(in_features=768, out_features=768, bias=True)
+            (v_proj): Linear(in_features=768, out_features=768, bias=True)
+            (q_proj): Linear(in_features=768, out_features=768, bias=True)
+            (out_proj): Linear(in_features=768, out_features=768, bias=True)
+            (inner_attn_ln): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+            (dropout_module): Dropout(p=0.0, inplace=False)
+          )
+          (self_attn_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+          (drop_path): DropPath(p=0.009090909090909092)
+          (ffn): FeedForwardNetwork(
+            (activation_dropout_module): Dropout(p=0.0, inplace=False)
+            (dropout_module): Dropout(p=0.1, inplace=False)
+            (fc1): Linear(in_features=768, out_features=3072, bias=True)
+            (fc2): Linear(in_features=3072, out_features=768, bias=True)
+            (ffn_layernorm): LayerNorm((3072,), eps=1e-05, elementwise_affine=True)
+          )
+          (final_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        )
+        (2): LongNetEncoderLayer(
+          (self_attn): DilatedAttention(
+            (k_proj): Linear(in_features=768, out_features=768, bias=True)
+            (v_proj): Linear(in_features=768, out_features=768, bias=True)
+            (q_proj): Linear(in_features=768, out_features=768, bias=True)
+            (out_proj): Linear(in_features=768, out_features=768, bias=True)
+            (inner_attn_ln): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+            (dropout_module): Dropout(p=0.0, inplace=False)
+          )
+          (self_attn_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+          (drop_path): DropPath(p=0.018181818181818184)
+          (ffn): FeedForwardNetwork(
+            (activation_dropout_module): Dropout(p=0.0, inplace=False)
+            (dropout_module): Dropout(p=0.1, inplace=False)
+            (fc1): Linear(in_features=768, out_features=3072, bias=True)
+            (fc2): Linear(in_features=3072, out_features=768, bias=True)
+            (ffn_layernorm): LayerNorm((3072,), eps=1e-05, elementwise_affine=True)
+          )
+          (final_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        )
+        (3): LongNetEncoderLayer(
+          (self_attn): DilatedAttention(
+            (k_proj): Linear(in_features=768, out_features=768, bias=True)
+            (v_proj): Linear(in_features=768, out_features=768, bias=True)
+            (q_proj): Linear(in_features=768, out_features=768, bias=True)
+            (out_proj): Linear(in_features=768, out_features=768, bias=True)
+            (inner_attn_ln): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+            (dropout_module): Dropout(p=0.0, inplace=False)
+          )
+          (self_attn_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+          (drop_path): DropPath(p=0.027272727272727275)
+          (ffn): FeedForwardNetwork(
+            (activation_dropout_module): Dropout(p=0.0, inplace=False)
+            (dropout_module): Dropout(p=0.1, inplace=False)
+            (fc1): Linear(in_features=768, out_features=3072, bias=True)
+            (fc2): Linear(in_features=3072, out_features=768, bias=True)
+            (ffn_layernorm): LayerNorm((3072,), eps=1e-05, elementwise_affine=True)
+          )
+          (final_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        )
+        (4): LongNetEncoderLayer(
+          (self_attn): DilatedAttention(
+            (k_proj): Linear(in_features=768, out_features=768, bias=True)
+            (v_proj): Linear(in_features=768, out_features=768, bias=True)
+            (q_proj): Linear(in_features=768, out_features=768, bias=True)
+            (out_proj): Linear(in_features=768, out_features=768, bias=True)
+            (inner_attn_ln): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+            (dropout_module): Dropout(p=0.0, inplace=False)
+          )
+          (self_attn_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+          (drop_path): DropPath(p=0.03636363636363637)
+          (ffn): FeedForwardNetwork(
+            (activation_dropout_module): Dropout(p=0.0, inplace=False)
+            (dropout_module): Dropout(p=0.1, inplace=False)
+            (fc1): Linear(in_features=768, out_features=3072, bias=True)
+            (fc2): Linear(in_features=3072, out_features=768, bias=True)
+            (ffn_layernorm): LayerNorm((3072,), eps=1e-05, elementwise_affine=True)
+          )
+          (final_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        )
+        (5): LongNetEncoderLayer(
+          (self_attn): DilatedAttention(
+            (k_proj): Linear(in_features=768, out_features=768, bias=True)
+            (v_proj): Linear(in_features=768, out_features=768, bias=True)
+            (q_proj): Linear(in_features=768, out_features=768, bias=True)
+            (out_proj): Linear(in_features=768, out_features=768, bias=True)
+            (inner_attn_ln): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+            (dropout_module): Dropout(p=0.0, inplace=False)
+          )
+          (self_attn_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+          (drop_path): DropPath(p=0.04545454545454546)
+          (ffn): FeedForwardNetwork(
+            (activation_dropout_module): Dropout(p=0.0, inplace=False)
+            (dropout_module): Dropout(p=0.1, inplace=False)
+            (fc1): Linear(in_features=768, out_features=3072, bias=True)
+            (fc2): Linear(in_features=3072, out_features=768, bias=True)
+            (ffn_layernorm): LayerNorm((3072,), eps=1e-05, elementwise_affine=True)
+          )
+          (final_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        )
+        (6): LongNetEncoderLayer(
+          (self_attn): DilatedAttention(
+            (k_proj): Linear(in_features=768, out_features=768, bias=True)
+            (v_proj): Linear(in_features=768, out_features=768, bias=True)
+            (q_proj): Linear(in_features=768, out_features=768, bias=True)
+            (out_proj): Linear(in_features=768, out_features=768, bias=True)
+            (inner_attn_ln): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+            (dropout_module): Dropout(p=0.0, inplace=False)
+          )
+          (self_attn_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+          (drop_path): DropPath(p=0.05454545454545455)
+          (ffn): FeedForwardNetwork(
+            (activation_dropout_module): Dropout(p=0.0, inplace=False)
+            (dropout_module): Dropout(p=0.1, inplace=False)
+            (fc1): Linear(in_features=768, out_features=3072, bias=True)
+            (fc2): Linear(in_features=3072, out_features=768, bias=True)
+            (ffn_layernorm): LayerNorm((3072,), eps=1e-05, elementwise_affine=True)
+          )
+          (final_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        )
+        (7): LongNetEncoderLayer(
+          (self_attn): DilatedAttention(
+            (k_proj): Linear(in_features=768, out_features=768, bias=True)
+            (v_proj): Linear(in_features=768, out_features=768, bias=True)
+            (q_proj): Linear(in_features=768, out_features=768, bias=True)
+            (out_proj): Linear(in_features=768, out_features=768, bias=True)
+            (inner_attn_ln): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+            (dropout_module): Dropout(p=0.0, inplace=False)
+          )
+          (self_attn_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+          (drop_path): DropPath(p=0.06363636363636364)
+          (ffn): FeedForwardNetwork(
+            (activation_dropout_module): Dropout(p=0.0, inplace=False)
+            (dropout_module): Dropout(p=0.1, inplace=False)
+            (fc1): Linear(in_features=768, out_features=3072, bias=True)
+            (fc2): Linear(in_features=3072, out_features=768, bias=True)
+            (ffn_layernorm): LayerNorm((3072,), eps=1e-05, elementwise_affine=True)
+          )
+          (final_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        )
+        (8): LongNetEncoderLayer(
+          (self_attn): DilatedAttention(
+            (k_proj): Linear(in_features=768, out_features=768, bias=True)
+            (v_proj): Linear(in_features=768, out_features=768, bias=True)
+            (q_proj): Linear(in_features=768, out_features=768, bias=True)
+            (out_proj): Linear(in_features=768, out_features=768, bias=True)
+            (inner_attn_ln): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+            (dropout_module): Dropout(p=0.0, inplace=False)
+          )
+          (self_attn_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+          (drop_path): DropPath(p=0.07272727272727274)
+          (ffn): FeedForwardNetwork(
+            (activation_dropout_module): Dropout(p=0.0, inplace=False)
+            (dropout_module): Dropout(p=0.1, inplace=False)
+            (fc1): Linear(in_features=768, out_features=3072, bias=True)
+            (fc2): Linear(in_features=3072, out_features=768, bias=True)
+            (ffn_layernorm): LayerNorm((3072,), eps=1e-05, elementwise_affine=True)
+          )
+          (final_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        )
+        (9): LongNetEncoderLayer(
+          (self_attn): DilatedAttention(
+            (k_proj): Linear(in_features=768, out_features=768, bias=True)
+            (v_proj): Linear(in_features=768, out_features=768, bias=True)
+            (q_proj): Linear(in_features=768, out_features=768, bias=True)
+            (out_proj): Linear(in_features=768, out_features=768, bias=True)
+            (inner_attn_ln): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+            (dropout_module): Dropout(p=0.0, inplace=False)
+          )
+          (self_attn_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+          (drop_path): DropPath(p=0.08181818181818183)
+          (ffn): FeedForwardNetwork(
+            (activation_dropout_module): Dropout(p=0.0, inplace=False)
+            (dropout_module): Dropout(p=0.1, inplace=False)
+            (fc1): Linear(in_features=768, out_features=3072, bias=True)
+            (fc2): Linear(in_features=3072, out_features=768, bias=True)
+            (ffn_layernorm): LayerNorm((3072,), eps=1e-05, elementwise_affine=True)
+          )
+          (final_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        )
+        (10): LongNetEncoderLayer(
+          (self_attn): DilatedAttention(
+            (k_proj): Linear(in_features=768, out_features=768, bias=True)
+            (v_proj): Linear(in_features=768, out_features=768, bias=True)
+            (q_proj): Linear(in_features=768, out_features=768, bias=True)
+            (out_proj): Linear(in_features=768, out_features=768, bias=True)
+            (inner_attn_ln): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+            (dropout_module): Dropout(p=0.0, inplace=False)
+          )
+          (self_attn_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+          (drop_path): DropPath(p=0.09090909090909093)
+          (ffn): FeedForwardNetwork(
+            (activation_dropout_module): Dropout(p=0.0, inplace=False)
+            (dropout_module): Dropout(p=0.1, inplace=False)
+            (fc1): Linear(in_features=768, out_features=3072, bias=True)
+            (fc2): Linear(in_features=3072, out_features=768, bias=True)
+            (ffn_layernorm): LayerNorm((3072,), eps=1e-05, elementwise_affine=True)
+          )
+          (final_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        )
+        (11): LongNetEncoderLayer(
+          (self_attn): DilatedAttention(
+            (k_proj): Linear(in_features=768, out_features=768, bias=True)
+            (v_proj): Linear(in_features=768, out_features=768, bias=True)
+            (q_proj): Linear(in_features=768, out_features=768, bias=True)
+            (out_proj): Linear(in_features=768, out_features=768, bias=True)
+            (inner_attn_ln): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+            (dropout_module): Dropout(p=0.0, inplace=False)
+          )
+          (self_attn_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+          (drop_path): DropPath(p=0.1)
+          (ffn): FeedForwardNetwork(
+            (activation_dropout_module): Dropout(p=0.0, inplace=False)
+            (dropout_module): Dropout(p=0.1, inplace=False)
+            (fc1): Linear(in_features=768, out_features=3072, bias=True)
+            (fc2): Linear(in_features=3072, out_features=768, bias=True)
+            (ffn_layernorm): LayerNorm((3072,), eps=1e-05, elementwise_affine=True)
+          )
+          (final_layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        )
+      )
+      (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+    )
+    (norm): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=1536, out_features=2, bias=True)
+  )
+)
+2012-007-C34-45-Striatum.svs 1
+tensor([[0.7141, 0.2859]], device='cuda:0')
+DLB-2012-007-Amygdala-C110-115.svs 1
+tensor([[0.5608, 0.4392]], device='cuda:0')
+2012-007-C34-45-Striatum.svs 1
+tensor([[0.7141, 0.2859]], device='cuda:0')
+DLB-2012-007-Amygdala-C110-115.svs 1
+tensor([[0.5608, 0.4392]], device='cuda:0')
+DLB-2012-007-EntCx-Hippo-C110-115.svs 1
+tensor([[0.3822, 0.6178]], device='cuda:0')
+2012-007-C34-45-Hippo.svs 1
+tensor([[0.2685, 0.7315]], device='cuda:0')
+DLB-2012-60-Striatum-C110-115.svs 1
+tensor([[0.5726, 0.4274]], device='cuda:0')
+DLB-2012-60-EntCx-Hippo-C110-115.svs 1
+tensor([[0.3817, 0.6183]], device='cuda:0')
+DLB-2012-60-Amygdala-C110-115.svs 1
+tensor([[0.5718, 0.4282]], device='cuda:0')
+2012-60-C34-45-Amygdala.svs 1
+tensor([[0.2008, 0.7992]], device='cuda:0')
+2013-131-C34-45-Amygdala.svs 1
+tensor([[0.2628, 0.7372]], device='cuda:0')
+DLB-2013-131-Striatum-C110-115.svs 1
+tensor([[0.6246, 0.3754]], device='cuda:0')
+DLB-2013-131-Amygdala-C110-115.svs 1
+tensor([[0.4227, 0.5773]], device='cuda:0')
+2013-131-C34-45-Hippo.svs 1
+tensor([[0.2123, 0.7877]], device='cuda:0')
+2017-003-C34-45-Striatum+Cortex.svs 1
+tensor([[0.6070, 0.3930]], device='cuda:0')
+DLB-2017-003--Striatum--C110-115.svs 1
+tensor([[0.5857, 0.4143]], device='cuda:0')
+PD118_C110-115_Amygdala David Menassa.svs 0
+tensor([[0.9125, 0.0875]], device='cuda:0')
+PD118_C110-115_Amygdala-001.svs 0
+tensor([[0.9122, 0.0878]], device='cuda:0')
+PD194_C110-115_EntCx David Menassa.svs 0
+tensor([[0.8357, 0.1643]], device='cuda:0')
+PD220-Amyg-C34-45.svs 0
+tensor([[0.9020, 0.0980]], device='cuda:0')
+PD220-C34-45-Striatum.svs 0
+tensor([[0.6479, 0.3521]], device='cuda:0')
+PD221-C34-45-Striatum.svs 0
+tensor([[0.8172, 0.1828]], device='cuda:0')
+PD277-Amyg-C34-45 David Menassa.svs 0
+tensor([[0.8687, 0.1313]], device='cuda:0')
+PDD-PD92-Striatum-C110-115.svs 0
+tensor([[0.8869, 0.1131]], device='cuda:0')
+PD92_C110-115_EntCx.svs 0
+tensor([[0.9408, 0.0592]], device='cuda:0')

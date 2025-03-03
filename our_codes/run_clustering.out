@@ -1,0 +1,6 @@
+/gladstone/finkbeiner/home/mahirwar/miniforge3/envs/gigapath_new/lib/python3.9/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: CUDA unknown error - this may be due to an incorrectly set up environment, e.g. changing env variable CUDA_VISIBLE_DEVICES after program start. Setting the available devices to be zero. (Triggered internally at /pytorch/c10/cuda/CUDAFunctions.cpp:108.)
+  return torch._C._cuda_getDeviceCount() > 0
+/gladstone/finkbeiner/home/mahirwar/miniforge3/envs/gigapath_new/lib/python3.9/site-packages/torch/utils/data/dataloader.py:617: UserWarning: This DataLoader will create 16 worker processes in total. Our suggested max number of worker in current system is 8, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+cpu
+slurmstepd: error: *** JOB 1959 ON kif-gh200-01 CANCELLED AT 2025-02-24T11:40:49 ***

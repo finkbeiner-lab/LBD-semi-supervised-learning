@@ -16,10 +16,12 @@ def find_level_for_target_mpp(slide_path, target_mpp):
     print(slide.properties)
 
     # Retrieve resolution information from properties
-    x_resolution = float(slide.properties.get('tiff.XResolution'))
-    y_resolution = float(slide.properties.get('tiff.YResolution'))
-    resolution_unit = slide.properties.get('tiff.ResolutionUnit')
+    #x_resolution = float(slide.properties.get('tiff.XResolution'))
+    #y_resolution = float(slide.properties.get('tiff.YResolution'))
+    mpp_x = float(slide.properties.get('aperio.MPP'))
+    mpp_y = float(slide.properties.get('aperio.MPP'))
 
+    """
     # Convert resolution to microns per pixel (MPP)
     if resolution_unit == 'centimeter':
         mpp_x = 10000 / x_resolution
@@ -32,7 +34,7 @@ def find_level_for_target_mpp(slide_path, target_mpp):
     if not mpp_x or not mpp_y:
         print("Could not calculate MPP due to missing or invalid resolution information.")
         return None
-
+    """
     # Iterate through each level and calculate MPP
     for level in range(slide.level_count):
         # Calculate MPP for the current level

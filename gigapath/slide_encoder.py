@@ -18,8 +18,9 @@ from functools import partial
 import os
 import sys
 import torch
-import torch.nn as nn
+import torch.nn 
 import numpy as np
+from torch import nn
 
 import timm
 from timm.models.registry import register_model

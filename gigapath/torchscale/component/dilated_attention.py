@@ -128,7 +128,7 @@ class DilatedAttention(MultiheadAttention):
             out += o * lse.type_as(o)
         out = rearrange(out, '(b h) l d -> b l (h d)', h=self.num_heads)
 
-        return out
+        return out, all_lses
 
     def forward(
         self,
@@ -207,11 +207,11 @@ class DilatedAttention(MultiheadAttention):
             outs.append(out)
             lses.append(lse)
 
-        attn = self.scattering(outs, lses, tgt_len, bsz, offset=offset)
+        attn, all_lses = self.scattering(outs, lses, tgt_len, bsz, offset=offset)
 
         if self.inner_attn_ln is not None:
             attn = self.inner_attn_ln(attn)
 
         attn = self.out_proj(attn)
 
-        return attn, None
+        return attn, all_lses

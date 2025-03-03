@@ -21,7 +21,7 @@ from utils import (get_optimizer, get_loss_function, \
 
 def train(dataloader, fold, args):
     train_loader, val_loader, test_loader = dataloader
-    # set up the writer
+    # setup the writer
     writer_dir = os.path.join(args.save_dir, f'fold_{fold}', 'tensorboard')
     if not os.path.isdir(writer_dir):
         os.makedirs(writer_dir, exist_ok=True)
