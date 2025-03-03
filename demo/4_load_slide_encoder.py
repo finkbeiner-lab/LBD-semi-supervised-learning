@@ -1,14 +1,17 @@
 import os
 import gigapath.slide_encoder as slide_encoder
+import numpy as np
+import gigapath
 
-assert "HF_TOKEN" in os.environ, "Please set the HF_TOKEN environment variable to your Hugging Face API token"
+
+#assert "HF_TOKEN" in os.environ, "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"
 
 # load from HuggingFace
 # NOTE: CLS token is not trained during the pretraining
-model_cls = slide_encoder.create_model("hf_hub:prov-gigapath/prov-gigapath", "gigapath_slide_enc12l768d", 1536, global_pool=False)
+#model_cls = slide_encoder.create_model("hf_hub:prov-gigapath/prov-gigapath", "gigapath_slide_enc12l768d", 1536, global_pool=False)
 
 # load from HuggingFace with global pooling
-model_global_pool = slide_encoder.create_model("hf_hub:prov-gigapath/prov-gigapath", "gigapath_slide_enc12l768d", 1536, global_pool=True)
+#model_global_pool = slide_encoder.create_model("hf_hub:prov-gigapath/prov-gigapath", "gigapath_slide_enc12l768d", 1536, global_pool=True)
 
 # load from local file
 # model = slide_encoder.create_model(
@@ -18,10 +21,13 @@ model_global_pool = slide_encoder.create_model("hf_hub:prov-gigapath/prov-gigapa
 #)
 
 # directly initialize a model using timm (random init)
-# import timm
-# model = timm.create_model("gigapath_slide_enc12l768d", pretrained=False, in_chans=1536)
+#import timm
+#model = timm.create_model("gigapath_slide_enc12l768d", pretrained=False, in_chans=1536)
+#import gigapath
+
+slide_encoder = gigapath.slide_encoder.create_model("hf_hub:prov-gigapath/prov-gigapath", "gigapath_slide_enc12l768d", 1536)
 
 # random init
 # model = slide_encoder.create_model("", "gigapath_slide_enc12l768d", 1536)
 
-print("param #", sum(p.numel() for p in model_global_pool.parameters()))
+#print("param #", sum(p.numel() for p in model_global_pool.parameters()))

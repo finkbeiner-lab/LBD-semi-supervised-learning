@@ -236,4 +236,9 @@ class SlideDataset(SlideDatasetForTasks):
         sample = self.get_sample_with_try(idx)
         return sample
 
+
+
+    
+
+    
     

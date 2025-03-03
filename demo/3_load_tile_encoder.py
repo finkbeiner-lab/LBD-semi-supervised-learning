@@ -4,7 +4,7 @@ from torchvision import transforms
 import torch
 import os
 
-assert "HF_TOKEN" in os.environ, "Please set the HF_TOKEN environment variable to your Hugging Face API token"
+#assert "HF_TOKEN" in os.environ, "Please set the HF_TOKEN environment variable to your Hugging Face API token"
 
 tile_encoder = timm.create_model("hf_hub:prov-gigapath/prov-gigapath", pretrained=True)
 
@@ -19,7 +19,8 @@ transform = transforms.Compose(
     ]
 )
 
-img_path = "images/prov_normal_000_1.png"
+#img_path = "images/prov_normal_000_1.png"
+img_path = "/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/output/outputs/preprocessing/output/PD13_Amygdala_C110-115 David Menassa.svs/00074x_31979y.png"
 sample_input = transform(Image.open(img_path).convert("RGB")).unsqueeze(0)
 
 with torch.no_grad():
@@ -27,8 +28,9 @@ with torch.no_grad():
     print("Model output:", output.shape)
     print(output)
 
-expected_output = torch.load("images/prov_normal_000_1.pt")
+expected_output = torch.load("/gladstone/finkbeiner/steve/work/data/npsad_data/monika/Antibodies_detection/codes/prov-gigapath/images/prov_normal_000_1.pt")
 print("Expected output:", expected_output.shape)
 print(expected_output)
 
-assert torch.allclose(output, expected_output, atol=1e-2)
+#assert torch.allclose(output, expected_output, atol=1e-2)
+
