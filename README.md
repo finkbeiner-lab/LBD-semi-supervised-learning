@@ -1,4 +1,4 @@
-# Prov-GigaPath
+# Using Prov-GigaPath codes as basis for training my data; The code has been updated by me with interpretability techniques
 
 ## A whole-slide foundation model for digital pathology from real-world data
 
