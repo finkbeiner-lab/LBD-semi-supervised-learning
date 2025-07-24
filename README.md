@@ -11,7 +11,7 @@ Hanwen Xu*, Naoto Usuyama*, Jaspreet Bagga, Sheng Zhang, Rajesh Rao, Tristan Nau
 ## Model Overview
 
 <p align="center">
-    <img src="images/gigapath_overview.png" width="90%"> <br>
+    <img src="images/gigapath_overview.png" width="50%"> <br>
 
   *Overview of Prov-GigaPath model architecture*
 
@@ -67,20 +67,22 @@ The Prov-GigaPath model consists of a tile encoder, that extracts local patterns
 We fine-tune gigapath models on our alpha syn stained whole slide tissue images to distinguish PDD and DLB brains- Accuracy of 92.3%
 Confusion matrix as follows:
 <p align="center">
-    <img src="output/finetuned/run_epoch-30_gc-5_blr-0.005_wd-0.05_ld-0.95_feat-5-11/eval_pretrained_lbd_pat_strat/confusion_matrix.png" width="90%"> <br>
-
-     *Confusion Matrix*
+    <img src="output/finetuned/run_epoch-30_gc-5_blr-0.005_wd-0.05_ld-0.95_feat-5-11/eval_pretrained_lbd_pat_strat/confusion_matrix.png" width="50%"> <br>
+    *Confusion Matrix*
 </p>
 
 <p align="center">
-    <img src="output/finetuned/run_epoch-30_gc-5_blr-0.005_wd-0.05_ld-0.95_feat-5-11/eval_pretrained_lbd_pat_strat/umap_plot.png" width="90%"> <br>
+    <img src="output/finetuned/run_epoch-30_gc-5_blr-0.005_wd-0.05_ld-0.95_feat-5-11/eval_pretrained_lbd_pat_strat/umap_plot.png" width="50%"> <br>
 
   *Umap plot*
 
 </p>
 
 Attention maps obtained at slide level, focusing on differnt patterns in image
-
+<p align="center">
+    <img src="output/attention_results/attention_head1.png" width="50%"> <br>
+    *Attention Head*
+</p>
 
 
 
