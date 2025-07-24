@@ -1,2 +1,0 @@
-val_loss,val_bacc,val_acc,val_macro_auroc,val_macro_auprc,val_qwk,val_0_auroc,val_1_auroc,val_0_auprc,val_1_auprc,test_loss,test_bacc,test_acc,test_macro_auroc,test_macro_auprc,test_qwk,test_0_auroc,test_1_auroc,test_0_auprc,test_1_auprc
-0.6564127604166666,0.5,0.6666666666666666,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.73388671875,0.5,0.2857142857142857,0.4,0.5464285714285714,0.0,0.39999999999999997,0.4,0.3333333333333333,0.7595238095238095
