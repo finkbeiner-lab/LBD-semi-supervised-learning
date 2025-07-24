@@ -65,11 +65,17 @@ The Prov-GigaPath model consists of a tile encoder, that extracts local patterns
 
 ## Our Results
 We fine-tune gigapath models on our alpha syn stained whole slide tissue images to distinguish PDD and DLB brains 
+Confusion matrix as follows:
+<p align="center">
+    <img src="output/finetuned/run_epoch-30_gc-5_blr-0.005_wd-0.05_ld-0.95_feat-5-11/eval_pretrained_lbd_pat_strat/confusion_matrix.png" width="90%"> <br>
+
+     *Confusion Matrix*
+</p>
 
 <p align="center">
     <img src="output/finetuned/run_epoch-30_gc-5_blr-0.005_wd-0.05_ld-0.95_feat-5-11/eval_pretrained_lbd_pat_strat/umap_plot.png" width="90%"> <br>
 
-  *Overview of Prov-GigaPath model architecture*
+  *Umap plot*
 
 </p>
 
