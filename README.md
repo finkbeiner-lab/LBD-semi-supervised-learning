@@ -78,9 +78,9 @@ Confusion matrix as follows:
 
 </p>
 
-Attention maps obtained at slide level, focusing on different patterns in image
+Attention maps obtained at slide level, focusing on different patterns in image in each head
 <p align="center">
-    <img src="output/attention_results/attention_head1.png" width="50%"> <br>
+    <img src="output/attention_results/visualization.png" width="50%"> <br>
     *Attention Head*
 </p>
 
