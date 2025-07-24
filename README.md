@@ -73,8 +73,7 @@ Confusion matrix as follows:
 
 <p align="center">
     <img src="output/finetuned/run_epoch-30_gc-5_blr-0.005_wd-0.05_ld-0.95_feat-5-11/eval_pretrained_lbd_pat_strat/umap_plot.png" width="50%"> <br>
-
-  *Umap plot*
+    *Umap plot*
 
 </p>
 
