@@ -64,7 +64,7 @@ ValueError: We have no connection or you passed local_files_only, so force_downl
 The Prov-GigaPath model consists of a tile encoder, that extracts local patterns at patch level, and a slide encoder, that outputs representations at slide level. This model can be used in both tile-level and slide-level tasks. When doing inference at the slide level, we recommend following this pipeline: (1) Tile the whole slide into N image tiles, with the coordinates of each tile. (2) Get the embeddings for each tile using our tile encoder. (3) Pass the N image tile embeddings and their coordinates into the slide encoder, to get slide level representations.
 
 ## Our Results
-We fine-tune gigapath models on our alpha syn stained whole slide tissue images to distinguish PDD and DLB brains 
+We fine-tune gigapath models on our alpha syn stained whole slide tissue images to distinguish PDD and DLB brains- Accuracy of 92.3%
 Confusion matrix as follows:
 <p align="center">
     <img src="output/finetuned/run_epoch-30_gc-5_blr-0.005_wd-0.05_ld-0.95_feat-5-11/eval_pretrained_lbd_pat_strat/confusion_matrix.png" width="90%"> <br>
@@ -78,4 +78,10 @@ Confusion matrix as follows:
   *Umap plot*
 
 </p>
+
+Attention maps obtained at slide level, focusing on differnt patterns in image
+
+
+
+
 
